@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="text" id="textInput">
+<button id="textChanger">Change the text</button>
+<p id="textTest">This is some text</p>
+    <script type="text/javascript">
+        document.getElementById("textChanger").onclick = function(){
+            var textEntered = "";
+
+            textEntered = document.getElementById("textInput").value;
+            // alert("You hacked! " + textEntered);
+            document.getElementById("textTest").innerHTML = textEntered;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin:0;
+        background-color: grey;
+    }
+    h1{
+        color:white;
+    }
+    p{
+        width:500px;
+        height: 500px;
+        color:white;
+    }
+</style>
+<body>
+    <h1>Testing</h1>
+<p id="example"><button id="myBtn"> Click Here</button></p>
+    <script type="text/javascript">
+        let bestTime = new Date().getTime();
+
+        function showBestTime(){
+            document.getElementById("myBtn").onclick = function(){
+            let endOfTime = new Date().getTime();
+            console.log("bestTime" , "+" , "endOfTime");
+            let totalTime =(endOfTime - bestTime) / 1000;
+            document.getElementById("example").innerHTML = "The best time is: "+totalTime+ 's';
+            
+            }
+        }
+        showBestTime();
+
+
+
+    </script>
+</body>
+</html>

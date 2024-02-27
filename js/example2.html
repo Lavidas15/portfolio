@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin:0;
+
+    }
+    #team{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        margin-top:150px;
+    }
+    div{
+        border-radius: 50%;
+        width:15vw;
+        height:30vh;
+    }
+    #circle{background-color: red; }
+    #circle1{background-color: blue;}
+    #circle2{background-color: yellow;}
+</style>
+<body>
+    <section id="team">    
+        <div id="circle"></div>
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+    </section>
+    <script type="text/javascript">
+        document.getElementById('circle').onclick = function(){
+            document.getElementById('circle').style.display = "none";
+        }
+        document.getElementById('circle1').onclick = function(){
+            document.getElementById('circle1').style.display = "none";
+        }
+        document.getElementById('circle2').onclick = function(){
+            document.getElementById('circle2').style.display = "none";
+        }
+    </script>
+</body>
+</html>
